@@ -9,7 +9,7 @@ function initApp(){
         
     var outputLog = document.getElementById('serverInfo');
     var httpRequest = new XMLHttpRequest();
-    var serverURL = 'http://www.w3schools.com/website/Customers_MYSQL.php';
+    var serverURL = '../php/winners.php';
     var button = document.getElementById('loadInfo');
     
     button.addEventListener('click', onButtonPress, false);
