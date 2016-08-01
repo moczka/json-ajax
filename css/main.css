@@ -1,0 +1,55 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+p, h2, h3, h1, h4{
+    padding: 10px;   
+    
+}
+
+h2{
+  margin-bottom: 0px;   
+}
+
+tr:first-child{
+    font-weight: bold;   
+}
+
+td{
+    border: 1px solid #000;   
+    padding: 5px;
+}
+
+.btn{
+    min-width: 60px;
+    display: inline-block;
+    padding: 5px;
+    background: #00ff00;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.backBtn{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+#serverInfo{
+    padding: 10px;
+       
+}
+
+.hide{
+    display: none;   
+}
+
