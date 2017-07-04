@@ -35,12 +35,17 @@ function initApp(){
                 case 3:
                     outputLog.innerHTML = "Processing Request!"; 
                     break;
+                default:
+                    outputLog.innerHTML = (httpRequest.status == 404)? "Server not found, check URL spelling" : "Something went wrong";
+                    button.innerHTML = "Failed";
+                    break;
             }
         }
     }
     
     function onButtonPress(e){
         e.target.innerHTML = "Loading..";
+        button.disabled = true;
         httpRequest.open("GET", serverURL, true);
         httpRequest.send();
     }
